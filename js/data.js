@@ -9,7 +9,7 @@ window.SHANTI = {
     facebook: "https://www.facebook.com/profile.php?id=61558972124053",
     facebookHandle: "https://www.facebook.com/profile.php?id=61558972124053",
     instagram: "https://www.instagram.com/shanti_cafe/",
-    messenger: "https://www.facebook.com/messages/t/61558972124053",
+    whatsapp: "https://wa.me/351914341688",
     maps: "https://www.google.com/maps/search/?api=1&query=Shanti+Caf%C3%A9+Centro+Comercial+Olival+Parque+Forte+da+Casa"
   },
 
@@ -68,7 +68,7 @@ window.SHANTI = {
       "hero.ctaMenu": "Explorar o menu",
       "hero.ctaVisit": "Visitar-nos",
       "hero.address": "Centro Comercial Olival Parque · Loja 41",
-      "hero.seal": "100% NATURAL · FEITO NO DIA · ",
+      "hero.seal": "100% NATURAL · ",
       "hero.script": "açaí da casa",
       "hero.alt": "Bowl de açaí com fruta fresca e chocolate",
       "hero.altSmall": "Pastel de açaí com morango",
@@ -100,13 +100,13 @@ window.SHANTI = {
       "acai.extra": "+ 0,50 € por extra",
       "acai.ingredients": "Escolhe os teus ingredientes",
       "acai.fruit": "Frutas",
-      "acai.fruitList": "Morango · Banana · Kiwi · Uva",
+      "acai.fruitList": "Morango · Banana · Kiwi",
       "acai.others": "Outros",
       "acai.othersList": "Granola · Paçoca · Coco ralado · Granulado · Nutella · Leite Ninho · Pintarolas",
       "acai.toppings": "Coberturas",
       "acai.toppingsList": "Mel · Leite condensado · Caramelo · Nutella",
       "acai.cta": "Ver no menu",
-      "acai.note": "Também disponível para levar.",
+      "acai.note": "Na loja · para levar + 0,50 €",
       "acai.script": "gelado, cremoso, teu.",
       "acai.tag": "ingredientes incluídos",
       "acai.tagNum": "4",
@@ -115,6 +115,7 @@ window.SHANTI = {
       "menu.eyebrow": "O menu",
       "menu.title": "Doces, salgados<br><em>e tudo o que apetece.</em>",
       "menu.lead": "Do pequeno-almoço ao lanche, do almoço leve ao doce da tarde. Preços em euros.",
+      "menu.takeaway": "para levar",
       "menu.note": "Preços em euros. Tens alguma alergia ou intolerância? Fala connosco — ajudamos a escolher.",
       "menu.pdf": "Ver menu em PDF",
       "menu.tabsAria": "Categorias do menu",
@@ -188,8 +189,8 @@ window.SHANTI = {
       "contact.phoneSub": "Liga ou envia mensagem",
       "contact.emailLabel": "E-mail",
       "contact.emailSub": "Para encomendas e informações",
-      "contact.messengerLabel": "Messenger",
-      "contact.messengerSub": "Resposta rápida pelo Facebook",
+      "contact.whatsappLabel": "WhatsApp",
+      "contact.whatsappSub": "Resposta rápida por mensagem",
 
       "footer.tagline": "Onde os sonhos são doces.",
       "footer.explore": "Explorar",
@@ -246,7 +247,7 @@ window.SHANTI = {
       "hero.ctaMenu": "Explore the menu",
       "hero.ctaVisit": "Visit us",
       "hero.address": "Centro Comercial Olival Parque · Shop 41",
-      "hero.seal": "100% NATURAL · MADE FRESH DAILY · ",
+      "hero.seal": "100% NATURAL · ",
       "hero.script": "our signature açaí",
       "hero.alt": "Açaí bowl with fresh fruit and chocolate",
       "hero.altSmall": "Açaí tart with strawberry",
@@ -278,13 +279,13 @@ window.SHANTI = {
       "acai.extra": "+ €0.50 per extra",
       "acai.ingredients": "Build your açaí",
       "acai.fruit": "Fruit",
-      "acai.fruitList": "Strawberry · Banana · Kiwi · Grape",
+      "acai.fruitList": "Strawberry · Banana · Kiwi",
       "acai.others": "Extras",
       "acai.othersList": "Granola · Paçoca · Coconut flakes · Sprinkles · Nutella · Milk powder · Chocolate lentils",
       "acai.toppings": "Toppings",
       "acai.toppingsList": "Honey · Condensed milk · Caramel · Nutella",
       "acai.cta": "See it on the menu",
-      "acai.note": "Available to take away too.",
+      "acai.note": "Eat in · take away + €0.50",
       "acai.script": "cold, creamy, yours.",
       "acai.tag": "ingredients included",
       "acai.tagNum": "4",
@@ -293,6 +294,7 @@ window.SHANTI = {
       "menu.eyebrow": "The menu",
       "menu.title": "Sweet, savoury,<br><em>and everything in between.</em>",
       "menu.lead": "From breakfast to afternoon tea, from a light lunch to a sweet treat. Prices in euros.",
+      "menu.takeaway": "to take away",
       "menu.note": "Prices in euros. Any allergies or intolerances? Talk to us — we'll help you choose.",
       "menu.pdf": "View menu as PDF",
       "menu.tabsAria": "Menu categories",
@@ -366,8 +368,8 @@ window.SHANTI = {
       "contact.phoneSub": "Call or send a message",
       "contact.emailLabel": "Email",
       "contact.emailSub": "For orders and information",
-      "contact.messengerLabel": "Messenger",
-      "contact.messengerSub": "Quick reply via Facebook",
+      "contact.whatsappLabel": "WhatsApp",
+      "contact.whatsappSub": "Quick reply via message",
 
       "footer.tagline": "Where dreams taste sweet.",
       "footer.explore": "Explore",
@@ -395,7 +397,7 @@ window.SHANTI = {
         {
           name: { pt: "Menu Café & Miniatura", en: "Coffee & mini pastry set" },
           desc: { pt: "Café acompanhado de uma miniatura de pastelaria.", en: "Coffee with a mini pastry." },
-          price: "1,30",
+          price: "1,50",
           tag: { pt: "Pequeno-almoço", en: "Breakfast" }
         },
         {
@@ -407,12 +409,17 @@ window.SHANTI = {
         {
           name: { pt: "Menu Salada", en: "Salad set" },
           desc: { pt: "A nossa salada, servida em versão menu.", en: "Our salad, served as a set meal." },
-          price: "7,50"
+          price: "8,00"
+        },
+        {
+          name: { pt: "Menu Sandes", en: "Sandwich set" },
+          desc: { pt: "Sandes em versão menu.", en: "Sandwich as a set meal." },
+          price: "7,00"
         },
         {
           name: { pt: "Menu Wrap / Bagel", en: "Wrap / bagel set" },
           desc: { pt: "Wrap ou bagel em versão menu.", en: "Wrap or bagel as a set meal." },
-          price: "6,80"
+          price: "7,00"
         }
       ]
     },
@@ -421,25 +428,124 @@ window.SHANTI = {
       icon: "ice",
       title: { pt: "Açaí", en: "Açaí" },
       note: {
-        pt: "Todos os copos e bowls incluem 4 ingredientes à escolha. Frutas: morango, banana, kiwi, uva. Outros: granola, paçoca, coco ralado, granulado, Nutella, leite Ninho, pintarolas. Coberturas: mel, leite condensado, caramelo, Nutella.",
-        en: "Every cup and bowl includes 4 ingredients of your choice. Fruit: strawberry, banana, kiwi, grape. Extras: granola, paçoca, coconut flakes, sprinkles, Nutella, milk powder, chocolate lentils. Toppings: honey, condensed milk, caramel, Nutella."
+        pt: "Na loja ou para levar. Cada copo inclui 4 ingredientes à escolha — fruta, granola, toppings e muito mais.",
+        en: "Eat in or take away. Every cup includes 4 ingredients of your choice — fruit, granola, toppings and more."
       },
       items: [
         {
-          name: { pt: "Copo 250 ml", en: "250 ml cup" },
+          name: { pt: "Açaí 1 bola", en: "Açaí 1 scoop" },
           desc: { pt: "4 ingredientes incluídos.", en: "4 ingredients included." },
-          price: "5,30"
+          price: "3,50",
+          takeaway: "4,00"
         },
         {
-          name: { pt: "Bowl 450 ml", en: "450 ml bowl" },
+          name: { pt: "Açaí 250 ml", en: "Açaí 250 ml" },
           desc: { pt: "4 ingredientes incluídos.", en: "4 ingredients included." },
-          price: "8,00",
+          price: "6,00",
+          takeaway: "6,50"
+        },
+        {
+          name: { pt: "Açaí 450 ml", en: "Açaí 450 ml" },
+          desc: { pt: "4 ingredientes incluídos.", en: "4 ingredients included." },
+          price: "8,50",
+          takeaway: "9,00",
           tag: { pt: "Mais pedido", en: "Most loved" }
         },
         {
           name: { pt: "Ingrediente extra", en: "Extra ingredient" },
           desc: { pt: "Adiciona mais um favorito.", en: "Add one more favourite." },
           price: "0,50"
+        }
+      ]
+    },
+    {
+      id: "sandes",
+      icon: "leaf",
+      title: { pt: "Sandes & Salgados", en: "Sandwiches & Savouries" },
+      note: {
+        pt: "Pão fresco, torradas e salgados do dia. Também disponível para levar.",
+        en: "Fresh bread, toasties and the day's savoury bakes. Available to take away too."
+      },
+      items: [
+        {
+          name: { pt: "Sandes", en: "Sandwich" },
+          desc: { pt: "Pão fresco com o recheio que escolheres.", en: "Fresh bread with your choice of filling." },
+          price: "4,00"
+        },
+        { name: { pt: "Tosta", en: "Toastie" }, price: "3,50" },
+        { name: { pt: "Tosta mista", en: "Ham & cheese toastie" }, price: "3,00" },
+        { name: { pt: "Pão com manteiga", en: "Bread with butter" }, price: "2,10" },
+        { name: { pt: "Pão com queijo ou fiambre", en: "Bread with cheese or ham" }, price: "2,60" },
+        { name: { pt: "Pão com misto", en: "Bread with ham & cheese" }, price: "2,80" },
+        { name: { pt: "Torrada", en: "Toast" }, price: "2,30" },
+        { name: { pt: "Meia torrada", en: "Half toast" }, price: "1,15" },
+        {
+          name: { pt: "Cachorro quente", en: "Hot dog" },
+          desc: { pt: "Pão, salsicha e molhos.", en: "Bun, sausage and sauces." },
+          price: "3,00"
+        },
+        {
+          name: { pt: "Wrap", en: "Wrap" },
+          desc: { pt: "Fresco e prático para o dia a dia.", en: "Fresh and handy for the day." },
+          price: "4,00"
+        },
+        {
+          name: { pt: "Salgados", en: "Savoury pastries" },
+          desc: { pt: "Uma seleção de salgados do dia.", en: "A selection of the day's savoury bakes." },
+          price: "1,35"
+        },
+        {
+          name: { pt: "Salada", en: "Salad" },
+          desc: { pt: "Fresca, colorida e sempre a mudar.", en: "Fresh, colourful and always changing." },
+          price: "5,00",
+          tag: { pt: "Saudável", en: "Healthy" }
+        },
+        { name: { pt: "Ovo cozido", en: "Boiled egg" }, price: "0,60" }
+      ]
+    },
+    {
+      id: "doces",
+      icon: "cake",
+      title: { pt: "Doces & Sobremesas", en: "Cakes & Desserts" },
+      note: {
+        pt: "Pastelaria tradicional portuguesa e bolos caseiros, incluindo opções sem açúcar.",
+        en: "Traditional Portuguese pastry and homemade cakes, including sugar-free options."
+      },
+      items: [
+        { name: { pt: "Miniatura", en: "Mini pastry" }, price: "0,80" },
+        { name: { pt: "Bolos", en: "Cake slices" }, price: "1,40" },
+        {
+          name: { pt: "Bolo Caseiro", en: "Homemade cake" },
+          desc: { pt: "Feito por nós — pergunta pela opção sem açúcar.", en: "Made by us — ask about the sugar-free option." },
+          price: "1,50",
+          tag: { pt: "Opção sem açúcar", en: "Sugar-free option" }
+        },
+        {
+          name: { pt: "Pastel de Nata", en: "Custard tart" },
+          desc: { pt: "O clássico português.", en: "The Portuguese classic." },
+          price: "1,30",
+          tag: { pt: "Tradicional", en: "Traditional" }
+        },
+        { name: { pt: "Croissant simples", en: "Plain croissant" }, price: "1,50" },
+        { name: { pt: "Croissant prensado", en: "Pressed croissant" }, price: "2,25" },
+        { name: { pt: "Croissant com fiambre", en: "Ham croissant" }, price: "1,75" },
+        { name: { pt: "Croissant misto", en: "Ham & cheese croissant" }, price: "2,00" },
+        { name: { pt: "Croissant com recheio", en: "Filled croissant" }, price: "2,00" },
+        { name: { pt: "Folhados", en: "Puff pastries" }, price: "1,50" },
+        { name: { pt: "Maxie Cookies", en: "Maxie cookies" }, price: "1,90" },
+        { name: { pt: "Mini Muffin / Waffle", en: "Mini muffin / waffle" }, price: "1,10" },
+        {
+          name: { pt: "Combo panqueca", en: "Pancake combo" },
+          desc: { pt: "Panquecas em versão combo.", en: "Pancakes as a combo." },
+          price: "3,00"
+        },
+        { name: { pt: "Gomas", en: "Gummy sweets" }, price: "1,30" },
+        { name: { pt: "Paçoca", en: "Paçoca" }, price: "0,60" },
+        { name: { pt: "Gelatina", en: "Jelly" }, price: "1,00" },
+        {
+          name: { pt: "Tulipa gelado", en: "Ice cream cone" },
+          desc: { pt: "Gelado Olá em tulipa.", en: "Olá ice cream in a cone." },
+          price: "3,90"
         }
       ]
     },
@@ -455,52 +561,53 @@ window.SHANTI = {
         {
           name: { pt: "Café", en: "Espresso" },
           desc: { pt: "O clássico, curto e intenso.", en: "The classic short espresso." },
-          price: "0,70"
+          price: "0,80"
         },
         {
           name: { pt: "Café Bio", en: "Organic espresso" },
           desc: { pt: "Torra biológica.", en: "Organic roast." },
-          price: "0,75"
+          price: "0,80"
+        },
+        {
+          name: { pt: "Café duplo", en: "Double espresso" },
+          desc: { pt: "Dose dupla, para quem precisa.", en: "A double shot, for when you need it." },
+          price: "1,60"
+        },
+        {
+          name: { pt: "Cappuccino", en: "Cappuccino" },
+          desc: { pt: "Café, leite cremoso e espuma.", en: "Coffee, creamy milk and foam." },
+          price: "1,20"
+        },
+        {
+          name: { pt: "Carioca / Garoto", en: "Carioca / garoto" },
+          desc: { pt: "Suave ou com um toque de leite.", en: "Light, or with a dash of milk." },
+          price: "0,80"
+        },
+        {
+          name: { pt: "Carioca de limão", en: "Lemon carioca" },
+          desc: { pt: "Infusão de casca de limão.", en: "Lemon peel infusion." },
+          price: "0,80"
         },
         {
           name: { pt: "Descafeinado", en: "Decaf espresso" },
           desc: { pt: "Todo o sabor, sem cafeína.", en: "All the flavour, no caffeine." },
-          price: "0,70"
-        },
-        {
-          name: { pt: "Carioca", en: "Carioca" },
-          desc: { pt: "Café suave e aromático.", en: "A lighter, aromatic coffee." },
-          price: "0,70"
-        },
-        {
-          name: { pt: "Carioca de Limão", en: "Lemon carioca" },
-          desc: { pt: "Infusão de casca de limão.", en: "Lemon peel infusion." },
-          price: "0,75"
-        },
-        {
-          name: { pt: "Garoto", en: "Garoto" },
-          desc: { pt: "Espresso com um toque de leite.", en: "Espresso with a dash of milk." },
-          price: "0,70"
-        },
-        {
-          name: { pt: "Meia de Leite", en: "Half-milk coffee" },
-          desc: { pt: "Metade café, metade leite.", en: "Half coffee, half milk." },
-          price: "0,90"
+          price: "0,80"
         },
         {
           name: { pt: "Galão", en: "Galão" },
           desc: { pt: "Café com bastante leite, em copo alto.", en: "Tall coffee with plenty of milk." },
-          price: "1,10"
+          price: "1,15"
         },
         {
-          name: { pt: "Café Latte Caramelo", en: "Caramel latte" },
-          desc: { pt: "Cremosidade com um toque doce.", en: "Creamy with a sweet touch." },
-          price: "1,10"
+          name: { pt: "Meia de leite", en: "Half-milk coffee" },
+          desc: { pt: "Metade café, metade leite.", en: "Half coffee, half milk." },
+          price: "1,00"
         },
+        { name: { pt: "Copo de leite", en: "Glass of milk" }, price: "0,90" },
         {
-          name: { pt: "Café com Chantili & Canela", en: "Coffee with cream & cinnamon" },
-          desc: { pt: "Um abraço em forma de café.", en: "A warm hug in a cup." },
-          price: "0,85"
+          name: { pt: "Chocolate quente", en: "Hot chocolate" },
+          desc: { pt: "Cremoso e reconfortante.", en: "Creamy and comforting." },
+          price: "2,00"
         }
       ]
     },
@@ -509,162 +616,27 @@ window.SHANTI = {
       icon: "juice",
       title: { pt: "Bebidas", en: "Drinks" },
       note: {
-        pt: "Sumos naturais feitos no dia, sem conservantes.",
-        en: "Fresh juices made daily, with no preservatives."
+        pt: "Sumos naturais feitos no dia, águas e refrigerantes.",
+        en: "Fresh juices made daily, plus water and soft drinks."
       },
       items: [
+        { name: { pt: "Água", en: "Water" }, price: "1,00" },
+        { name: { pt: "Água com gás", en: "Sparkling water" }, price: "1,00" },
+        { name: { pt: "Sumo Compal", en: "Compal juice" }, price: "1,60" },
+        { name: { pt: "Sumos de lata", en: "Canned juices" }, price: "1,60" },
         {
-          name: { pt: "Copo de Leite", en: "Glass of milk" },
-          price: "0,90"
-        },
-        {
-          name: { pt: "Chá", en: "Tea" },
+          name: { pt: "Chás e infusões", en: "Teas & infusions" },
           desc: { pt: "Pergunta pelos sabores do dia.", en: "Ask about today's flavours." },
           price: "0,90"
         },
-        {
-          name: { pt: "Água sem gás", en: "Still water" },
-          price: "0,90"
-        },
-        {
-          name: { pt: "Compal", en: "Compal juice" },
-          price: "1,30"
-        },
-        {
-          name: { pt: "Bi", en: "Bi juice" },
-          price: "1,30"
-        },
-        {
-          name: { pt: "Go Chill", en: "Go Chill" },
-          price: "1,95"
-        },
-        {
-          name: { pt: "Frize", en: "Frize sparkling water" },
-          price: "1,10"
-        },
-        {
-          name: { pt: "Água Castelo", en: "Castelo water" },
-          price: "0,90"
-        },
+        { name: { pt: "Freeze", en: "Freeze" }, price: "1,20" },
         {
           name: { pt: "Sumo Natural do Dia", en: "Juice of the day" },
           desc: { pt: "Fruta fresca espremida na hora.", en: "Fresh fruit, squeezed to order." },
           price: "1,50",
           tag: { pt: "100% natural", en: "100% natural" }
         },
-        {
-          name: { pt: "Polpa de Fruta", en: "Fruit pulp" },
-          price: "2,00"
-        },
-        {
-          name: { pt: "Refrigerantes", en: "Soft drinks" },
-          price: "1,30"
-        }
-      ]
-    },
-    {
-      id: "snacks",
-      icon: "leaf",
-      title: { pt: "Snacks & Salgados", en: "Snacks & Savouries" },
-      note: {
-        pt: "Para um almoço leve ou um lanche a meio da tarde. Também disponível para levar.",
-        en: "For a light lunch or an afternoon snack. Available to take away too."
-      },
-      items: [
-        {
-          name: { pt: "Bowl Iogurte", en: "Yogurt bowl" },
-          desc: { pt: "Iogurte natural, granola e fruta.", en: "Natural yogurt, granola and fruit." },
-          price: "3,00",
-          tag: { pt: "Saudável", en: "Healthy" }
-        },
-        {
-          name: { pt: "Torrada", en: "Toast" },
-          price: "2,00"
-        },
-        {
-          name: { pt: "Meia torrada", en: "Half toast" },
-          price: "1,00"
-        },
-        {
-          name: { pt: "Sandes com manteiga", en: "Butter sandwich" },
-          price: "2,00"
-        },
-        {
-          name: { pt: "Sandes mista", en: "Ham & cheese sandwich" },
-          price: "2,40"
-        },
-        {
-          name: { pt: "Tosta mista", en: "Ham & cheese toastie" },
-          price: "3,00"
-        },
-        {
-          name: { pt: "Wrap", en: "Wrap" },
-          desc: { pt: "Fresco e prático para o dia a dia.", en: "Fresh and handy for the day." },
-          price: "3,50"
-        },
-        {
-          name: { pt: "Bagel", en: "Bagel" },
-          price: "3,50"
-        },
-        {
-          name: { pt: "Salada", en: "Salad" },
-          desc: { pt: "Fresca, colorida e sempre a mudar.", en: "Fresh, colourful and always changing." },
-          price: "4,50",
-          tag: { pt: "Saudável", en: "Healthy" }
-        },
-        {
-          name: { pt: "Salgados", en: "Savoury pastries" },
-          desc: { pt: "Uma seleção de salgados do dia.", en: "A selection of the day's savoury bakes." },
-          price: "1,20"
-        }
-      ]
-    },
-    {
-      id: "doces",
-      icon: "cake",
-      title: { pt: "Doces & Pastelaria", en: "Cakes & Pastry" },
-      note: {
-        pt: "Pastelaria tradicional portuguesa e bolos caseiros, incluindo opções sem açúcar.",
-        en: "Traditional Portuguese pastry and homemade cakes, including sugar-free options."
-      },
-      items: [
-        {
-          name: { pt: "Bolos", en: "Cake slices" },
-          price: "1,20"
-        },
-        {
-          name: { pt: "Pastel de Nata", en: "Custard tart" },
-          desc: { pt: "O clássico português.", en: "The Portuguese classic." },
-          price: "1,10",
-          tag: { pt: "Tradicional", en: "Traditional" }
-        },
-        {
-          name: { pt: "Miniatura", en: "Mini pastry" },
-          price: "0,70"
-        },
-        {
-          name: { pt: "Bolo Caseiro", en: "Homemade cake" },
-          desc: { pt: "Feito por nós — pergunta pela opção sem açúcar.", en: "Made by us — ask about the sugar-free option." },
-          price: "1,50",
-          tag: { pt: "Opção sem açúcar", en: "Sugar-free option" }
-        },
-        {
-          name: { pt: "Gelatina", en: "Jelly" },
-          price: "1,00"
-        },
-        {
-          name: { pt: "Sobremesas", en: "Desserts" },
-          desc: { pt: "Fala connosco para conhecer as sugestões do dia.", en: "Ask us about today's suggestions." },
-          price: "1,50–3,00"
-        },
-        {
-          name: { pt: "Salada de Fruta grd.", en: "Large fruit salad" },
-          price: "2,00"
-        },
-        {
-          name: { pt: "Salada de Fruta peq.", en: "Small fruit salad" },
-          price: "1,50"
-        }
+        { name: { pt: "Polpa de Fruta", en: "Fruit pulp" }, price: "2,00" }
       ]
     }
   ],

@@ -168,7 +168,9 @@
       return '<div class="menu-item">' +
         '<div class="menu-item-main"><h3>' + pick(item.name) + tag + "</h3>" + desc + "</div>" +
         '<span class="menu-dots" aria-hidden="true"></span>' +
-        '<span class="menu-price">' + item.price + " €</span>" +
+        '<span class="menu-price">' + item.price + " €" +
+          (item.takeaway ? "<small>" + t("menu.takeaway") + " " + item.takeaway + " €</small>" : "") +
+        "</span>" +
         "</div>";
     }).join("") + "</div>";
   }
