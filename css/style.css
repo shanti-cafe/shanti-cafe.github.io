@@ -918,9 +918,9 @@ body.nav-open .menu-toggle-box span:nth-child(3) { transform: translateY(-6px) r
 
 .seal-ring text {
   font-family: var(--font-body);
-  font-size: 7.2px;
+  font-size: 14.5px;
   font-weight: 800;
-  letter-spacing: 1.15px;
+  letter-spacing: 0.9px;
   fill: var(--earth);
 }
 
@@ -1028,7 +1028,7 @@ body.nav-open .menu-toggle-box span:nth-child(3) { transform: translateY(-6px) r
 
 .about-sticker {
   position: absolute;
-  left: -0.35rem;
+  right: -0.35rem;
   top: 6%;
   display: grid;
   place-items: center;
@@ -1043,14 +1043,14 @@ body.nav-open .menu-toggle-box span:nth-child(3) { transform: translateY(-6px) r
   font-size: 1.22rem;
   line-height: 1;
   text-align: center;
-  transform: rotate(-10deg);
+  transform: rotate(9deg);
   box-shadow: 0 18px 36px -24px rgba(53, 96, 77, 0.85);
 }
 
 .about-flower {
   position: absolute;
-  top: -1rem;
-  right: -0.6rem;
+  top: 6%;
+  left: -0.35rem;
   width: 46px;
   color: var(--orange);
   opacity: 0.85;
@@ -1446,12 +1446,24 @@ body.nav-open .menu-toggle-box span:nth-child(3) { transform: translateY(-6px) r
 
 .menu-price {
   flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   color: var(--earth);
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
   white-space: nowrap;
+}
+
+.menu-price small {
+  margin-top: 0.12rem;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .menu-cards {
@@ -1542,6 +1554,36 @@ body.nav-open .menu-toggle-box span:nth-child(3) { transform: translateY(-6px) r
 
 html:not(.js) .menu-tabs { display: none; }
 html:not(.js) .menu-panels { padding-top: 0.5rem; }
+
+/* Separadores do menu em grelha: todos visíveis sem deslizar (telemóvel) */
+@media (max-width: 700px) {
+  .menu-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.4rem;
+    overflow: visible;
+    padding: 0.1rem 0 0.9rem;
+  }
+  .menu-tab {
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.28rem;
+    min-height: 56px;
+    padding: 0.5rem 0.3rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    line-height: 1.16;
+    text-align: center;
+    white-space: normal;
+  }
+  .menu-tab span { display: block; }
+  .menu-tab .icon { width: 15px; height: 15px; }
+}
+
+@media (max-width: 359px) {
+  .menu-tab { font-size: 0.66rem; padding-left: 0.2rem; padding-right: 0.2rem; }
+}
 
 /* Banner saudável */
 .healthy-banner {
@@ -2733,8 +2775,8 @@ html.js .reveal.is-in {
   .site-footer { padding-bottom: 5.5rem; }
   .to-top { bottom: 5.3rem; width: 40px; height: 40px; }
   .fb-frame { height: 540px; }
-  .seal { width: 88px; height: 88px; }
-  .seal-ring text { font-size: 7.6px; letter-spacing: 1.05px; }
+  .seal { width: 96px; height: 96px; }
+  .seal-ring text { font-size: 15px; letter-spacing: 0.85px; }
   .about-mini { width: 43%; }
   .acai-tag { bottom: 2.1rem; }
   .lb-prev { left: 0.35rem; }
@@ -2753,8 +2795,8 @@ html.js .reveal.is-in {
   .hero-chips li { font-size: 0.71rem; }
   .acai-prices { grid-template-columns: 1fr; }
   .juice-list { grid-template-columns: 1fr; }
-  .seal { top: 1%; right: -0.4rem; width: 80px; height: 80px; }
-  .seal-center .icon { width: 24px; height: 24px; }
+  .seal { top: 1%; right: -0.4rem; width: 90px; height: 90px; }
+  .seal-center .icon { width: 26px; height: 26px; }
   .hero-mini { width: 45%; }
 }
 
