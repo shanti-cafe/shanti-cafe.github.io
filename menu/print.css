@@ -1,0 +1,493 @@
+/* =========================================================
+   Shanti Café — menu para impressão (100 × 220 mm)
+   Este ficheiro é usado por menu/build-menu.mjs
+   ========================================================= */
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("../assets/fonts/fraunces-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("../assets/fonts/fraunces-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 400 700;
+  src: url("../assets/fonts/fraunces-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 400 700;
+  src: url("../assets/fonts/fraunces-italic-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 800;
+  src: url("../assets/fonts/manrope-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 800;
+  src: url("../assets/fonts/manrope-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("../assets/fonts/caveat-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("../assets/fonts/caveat-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  --choc: #4b2a18;
+  --earth: #723f23;
+  --orange: #f3962e;
+  --deep: #ed602a;
+  --peach: #fdd5a8;
+  --cream: #fff8f0;
+  --teal: #477d65;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: 100mm 220mm;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--choc);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--cream);
+  font-size: 8.6pt;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  position: relative;
+  width: 100mm;
+  height: 220mm;
+  overflow: hidden;
+  padding: 7.5mm 9mm 6.5mm;
+  background: var(--choc);
+  display: flex;
+  flex-direction: column;
+  page-break-after: always;
+  break-after: page;
+}
+.page:last-child { page-break-after: auto; break-after: auto; }
+
+/* manchas decorativas */
+.page::before,
+.page::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.page::before {
+  width: 104mm;
+  height: 104mm;
+  top: 46mm;
+  right: -58mm;
+  background: radial-gradient(circle at 35% 35%, rgba(243, 150, 46, 0.24), rgba(243, 150, 46, 0.06) 68%, transparent 72%);
+}
+.page::after {
+  width: 70mm;
+  height: 70mm;
+  bottom: -34mm;
+  left: -26mm;
+  background: radial-gradient(circle at 60% 40%, rgba(71, 125, 101, 0.34), rgba(71, 125, 101, 0.08) 70%, transparent 74%);
+}
+
+.page > * { position: relative; z-index: 1; }
+
+/* ---------- topo ---------- */
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6mm;
+}
+.logo {
+  width: 25mm;
+  height: 25mm;
+  display: block;
+}
+.kicker {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
+  text-transform: uppercase;
+  color: var(--peach);
+}
+.brand-rule {
+  width: 13mm;
+  height: 0.7mm;
+  border-radius: 1mm;
+  background: var(--orange);
+  margin-top: 0.6mm;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8mm;
+  min-height: 0;
+}
+
+.eyebrow {
+  font-size: 6pt;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 1.6mm;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 19pt;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  color: var(--cream);
+}
+.title em {
+  font-style: italic;
+  color: var(--peach);
+}
+.title-rule {
+  width: 14mm;
+  height: 0.8mm;
+  border-radius: 1mm;
+  background: var(--orange);
+  margin-top: 3mm;
+}
+
+.note {
+  margin-top: 3mm;
+  font-size: 7pt;
+  line-height: 1.45;
+  color: rgba(253, 213, 168, 0.82);
+  max-width: 76mm;
+}
+
+/* ---------- listas ---------- */
+.rows {
+  margin-top: 3.5mm;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  align-items: baseline;
+  gap: 1.6mm;
+  padding: 1.5mm 0;
+  border-bottom: 0.25mm dashed rgba(253, 213, 168, 0.2);
+}
+.row:last-child { border-bottom: 0; }
+.row-info { min-width: 0; }
+.row-name {
+  display: block;
+  font-size: 8.7pt;
+  font-weight: 650;
+  letter-spacing: -0.005em;
+  color: var(--cream);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.row-tag {
+  display: block;
+  margin-top: 0.4mm;
+  font-size: 5.5pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+.row-lead {
+  flex: 1 1 4mm;
+  min-width: 3mm;
+  border-bottom: 0.2mm dotted rgba(253, 213, 168, 0.32);
+  transform: translateY(-0.7mm);
+}
+.row-price {
+  flex: none;
+  font-family: "Fraunces", serif;
+  font-size: 9.6pt;
+  font-weight: 600;
+  color: var(--peach);
+  white-space: nowrap;
+  text-align: right;
+}
+.row-price small {
+  display: block;
+  margin-top: 0.3mm;
+  font-family: "Manrope", sans-serif;
+  font-size: 5.6pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(253, 213, 168, 0.66);
+}
+
+/* fotografia no fundo da página */
+.menu-photo {
+  flex: none;
+  margin-top: auto;
+  padding-top: 4mm;
+  overflow: hidden;
+}
+.menu-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3mm;
+}
+
+.menus-bottom {
+  margin-top: auto;
+  padding-top: 5mm;
+}
+.menus-bottom .menu-photo { margin-top: 0; padding-top: 0; }
+
+/* assinatura manuscrita */
+.handmade {
+  margin-top: 2.5mm;
+  padding-top: 0;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 15pt;
+  color: var(--peach);
+}
+
+/* subtítulo dentro da mesma página */
+.subhead {
+  margin-top: 4.2mm;
+  font-family: "Fraunces", serif;
+  font-size: 12.5pt;
+  font-weight: 600;
+  color: var(--peach);
+}
+.subhead + .rows { margin-top: 2.2mm; }
+
+/* página densa (muitos itens) */
+.page--dense .rows { margin-top: 2.8mm; }
+.page--dense .row { padding: 0.98mm 0; }
+.page--dense .row-name { font-size: 8.3pt; }
+.page--dense .row-price { font-size: 9.1pt; }
+.page--dense .title { font-size: 17.5pt; }
+.page--dense .content { padding-top: 7mm; }
+
+/* ---------- cartões (menus) ---------- */
+.cards {
+  margin-top: 4mm;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6mm;
+}
+.card {
+  padding: 2.9mm 3.4mm;
+  border: 0.3mm solid rgba(253, 213, 168, 0.26);
+  border-radius: 2.6mm;
+  background: rgba(255, 248, 240, 0.045);
+}
+.card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2mm;
+}
+.card h3 {
+  font-size: 9.4pt;
+  font-weight: 700;
+  color: var(--cream);
+}
+.card-price {
+  flex: none;
+  font-family: "Fraunces", serif;
+  font-size: 10.4pt;
+  font-weight: 600;
+  color: var(--peach);
+}
+.card p {
+  margin-top: 0.8mm;
+  font-size: 6.7pt;
+  line-height: 1.4;
+  color: rgba(253, 213, 168, 0.78);
+}
+
+/* ---------- açaí ---------- */
+.acai-hero {
+  margin-top: 1.5mm;
+  text-align: center;
+}
+.acai-word {
+  font-family: "Caveat", cursive;
+  font-size: 46pt;
+  line-height: 0.9;
+  color: var(--peach);
+  transform: rotate(-5deg);
+  display: inline-block;
+}
+.acai-sub {
+  margin-top: 1.6mm;
+  font-size: 6.4pt;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.tiers {
+  display: flex;
+  gap: 2.6mm;
+  margin-top: 5mm;
+}
+.tier {
+  flex: 1;
+  padding: 2.8mm 3mm;
+  border: 0.3mm solid rgba(243, 150, 46, 0.38);
+  border-radius: 2.6mm;
+  background: rgba(243, 150, 46, 0.12);
+}
+.tier h2 {
+  font-size: 6.4pt;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 1.4mm;
+}
+.tier-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.4mm;
+  padding: 1.15mm 0;
+  border-bottom: 0.2mm dotted rgba(253, 213, 168, 0.28);
+}
+.tier-row:last-child { border-bottom: 0; }
+.tier-row span {
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--cream);
+  white-space: nowrap;
+}
+.tier-row strong {
+  font-family: "Fraunces", serif;
+  font-size: 9pt;
+  font-weight: 600;
+  color: var(--peach);
+  white-space: nowrap;
+}
+.extra-note {
+  margin-top: 3mm;
+  text-align: center;
+  font-size: 6.8pt;
+  font-weight: 600;
+  color: var(--peach);
+}
+
+.ingredients {
+  margin-top: 4.5mm;
+  padding-top: 3mm;
+  border-top: 0.3mm solid rgba(253, 213, 168, 0.2);
+}
+.ingredients h3 {
+  font-family: "Fraunces", serif;
+  font-size: 11pt;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 2mm;
+}
+.ing + .ing { margin-top: 1.8mm; }
+.ing b {
+  display: block;
+  font-size: 5.7pt;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.5mm;
+}
+.ing p {
+  font-size: 6.7pt;
+  line-height: 1.5;
+  color: rgba(253, 213, 168, 0.86);
+}
+
+/* ---------- rodapé ---------- */
+.foot {
+  margin-top: auto;
+  padding-top: 3.5mm;
+  border-top: 0.25mm solid rgba(253, 213, 168, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2mm;
+  font-size: 5.8pt;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgba(253, 213, 168, 0.62);
+}
+.foot .handles { display: flex; gap: 2.2mm; }
+.foot .num { font-family: "Fraunces", serif; font-size: 6.6pt; }
+
+/* última página */
+.visit {
+  padding-top: 3mm;
+  text-align: center;
+}
+.visit h3 {
+  font-family: "Caveat", cursive;
+  font-size: 15pt;
+  line-height: 1;
+  color: var(--peach);
+  margin-bottom: 1.6mm;
+}
+.visit p {
+  font-size: 6.4pt;
+  line-height: 1.55;
+  color: rgba(253, 213, 168, 0.8);
+}
+.visit .hours {
+  margin-top: 1.4mm;
+  font-size: 6pt;
+  color: rgba(253, 213, 168, 0.62);
+}
+.page--last .foot { margin-top: 3mm; }
