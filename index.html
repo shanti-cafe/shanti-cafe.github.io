@@ -225,8 +225,8 @@
           </div>
           <div class="hero-mini">
             <picture>
-              <source srcset="assets/img/hero-tart.webp" type="image/webp">
-              <img src="assets/img/hero-tart.jpg" width="700" height="700" alt="Pastel de açaí com morango" data-i18n-alt="hero.altSmall" loading="lazy" decoding="async">
+              <source srcset="assets/img/acai-promo.webp" type="image/webp">
+              <img src="assets/img/acai-promo.jpg" width="1438" height="1362" alt="Copo de açaí com morango, granola e colher" data-i18n-alt="hero.altSmall" loading="lazy" decoding="async">
             </picture>
             <span class="hero-mini-label" data-i18n="hero.script">açaí da casa</span>
           </div>
@@ -339,13 +339,35 @@
           <p class="section-text section-text--light" data-i18n="acai.lead">Feito com polpa de açaí, servido bem gelado e acompanhado por fruta fresca e os teus ingredientes favoritos. É um dos melhores da região — e o motivo pelo qual muitos clientes voltam vezes sem conta.</p>
 
           <div class="acai-prices">
-            <div class="acai-price">
-              <span data-i18n="acai.copo">Copo 250 ml</span>
-              <strong>6,00 <small>€</small></strong>
+            <div class="acai-price-group">
+              <span class="acai-price-head" data-i18n="acai.store">Na loja</span>
+              <div class="acai-price">
+                <span data-i18n="acai.bola">1 bola</span>
+                <strong data-price="acai.bola.store">3,50 <small>€</small></strong>
+              </div>
+              <div class="acai-price">
+                <span data-i18n="acai.copo">250 ml</span>
+                <strong data-price="acai.copo.store">6,00 <small>€</small></strong>
+              </div>
+              <div class="acai-price">
+                <span data-i18n="acai.bowl">450 ml</span>
+                <strong data-price="acai.bowl.store">8,50 <small>€</small></strong>
+              </div>
             </div>
-            <div class="acai-price">
-              <span data-i18n="acai.bowl">Bowl 450 ml</span>
-              <strong>8,50 <small>€</small></strong>
+            <div class="acai-price-group">
+              <span class="acai-price-head" data-i18n="acai.takeaway">Para levar</span>
+              <div class="acai-price">
+                <span data-i18n="acai.bola">1 bola</span>
+                <strong data-price="acai.bola.takeaway">4,00 <small>€</small></strong>
+              </div>
+              <div class="acai-price">
+                <span data-i18n="acai.copo">250 ml</span>
+                <strong data-price="acai.copo.takeaway">6,50 <small>€</small></strong>
+              </div>
+              <div class="acai-price">
+                <span data-i18n="acai.bowl">450 ml</span>
+                <strong data-price="acai.bowl.takeaway">9,00 <small>€</small></strong>
+              </div>
             </div>
           </div>
           <p class="acai-included"><span data-i18n="acai.included">4 ingredientes incluídos</span> <span class="acai-extra" data-i18n="acai.extra">+ 0,50 € por extra</span></p>
@@ -425,10 +447,10 @@
           <p class="section-text section-text--light" data-i18n="juice.lead">Fruta fresca, nada de conservantes e muito sabor. Os nossos sumos são feitos no dia, um a um, para que sintas o sabor verdadeiro da fruta.</p>
 
           <ul class="juice-list">
-            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="juice.b1">100% natural</span></li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="juice.b2">Sem conservantes</span></li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="juice.b3">Feito no dia</span></li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="juice.b4">Ideal para detox</span></li>
+            <li><span class="menu-tag" data-i18n="juice.b1">100% natural</span></li>
+            <li><span class="menu-tag" data-i18n="juice.b2">Sem conservantes</span></li>
+            <li><span class="menu-tag" data-i18n="juice.b3">Feito no dia</span></li>
+            <li><span class="menu-tag" data-i18n="juice.b4">Ideal para detox</span></li>
           </ul>
 
           <a class="btn btn-peach" href="#menu" data-menu-jump="bebidas">
@@ -620,7 +642,7 @@
           <a class="contact-card" href="mailto:shantireusar@gmail.com">
             <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
             <span class="contact-label" data-i18n="contact.emailLabel">E-mail</span>
-            <strong class="contact-email">shantireusar@gmail.com</strong>
+            <strong class="contact-email">shantireusar@<wbr>gmail.com</strong>
             <span class="contact-sub" data-i18n="contact.emailSub">Para encomendas e informações</span>
           </a>
           <a class="contact-card" href="https://wa.me/351914341688" target="_blank" rel="noopener">
@@ -653,6 +675,9 @@
             <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
           </a>
         </div>
+        <a class="footer-lre" href="https://www.livroreclamacoes.pt/inicio" target="_blank" rel="noopener" aria-label="Livro de Reclamações">
+          <img src="assets/img/logo_LRE.png" width="140" height="58" alt="Livro de Reclamações" decoding="async">
+        </a>
       </div>
 
       <nav class="footer-col" aria-label="Explorar" data-i18n-aria="footer.explore">
@@ -722,7 +747,7 @@
       <svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg>
     </button>
     <figure class="lb-figure">
-      <img id="lbImage" src="" alt="">
+      <img id="lbImage" alt="">
       <figcaption class="lb-caption">
         <span id="lbCaption"></span>
         <span class="lb-count" id="lbCount"></span>

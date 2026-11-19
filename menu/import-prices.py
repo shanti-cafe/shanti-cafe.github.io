@@ -218,18 +218,28 @@ def main() -> int:
     # destaque do açaí na página inicial
     index_path = ROOT / "index.html"
     html = index_path.read_text(encoding="utf-8")
-    for ui_key, sheet_name in (("acai.copo", "Açaí 250 ml"), ("acai.bowl", "Açaí 450 ml")):
+    acai_highlights = (
+        ("acai.bola", "Açaí 1 bola"),
+        ("acai.copo", "Açaí 250 ml"),
+        ("acai.bowl", "Açaí 450 ml"),
+    )
+    for ui_key, sheet_name in acai_highlights:
         entry = sheet.get(norm(sheet_name))
         if not entry:
             continue
-        pattern = re.compile(
-            r'(<div class="acai-price">\s*<span data-i18n="' + re.escape(ui_key) +
-            r'">.*?</span>\s*<strong>)[^<]*(<small>)',
-            re.S,
-        )
-        html, count = pattern.subn(lambda m: m.group(1) + entry["price"] + " " + m.group(2), html, count=1)
-        if count:
-            pass
+        for suffix, value in (("store", entry["price"]), ("takeaway", entry.get("takeaway"))):
+            if not value:
+                continue
+            pattern = re.compile(
+                r'(<strong data-price="' + re.escape(ui_key) + r'\.' + suffix +
+                r'">)[^<]*(<small>)',
+                re.S,
+            )
+            html, count = pattern.subn(
+                lambda m: m.group(1) + value + " " + m.group(2), html, count=1
+            )
+            if count:
+                pass
     index_path.write_text(html, encoding="utf-8")
 
     extras = [found[key]["name"] for key in found if key not in sheet]
