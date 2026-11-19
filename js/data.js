@@ -737,6 +737,46 @@ window.SHANTI = {
       img: "brigadeiros", w: 900, h: 900,
       alt: { pt: "Brigadeiros caseiros cobertos de chocolate", en: "Homemade chocolate brigadeiros" },
       caption: { pt: "Brigadeiros", en: "Brigadeiros" }
+    },
+    {
+      img: "nata-travesseiros", w: 1532, h: 2047,
+      alt: { pt: "Pastéis de nata e travesseiros numa travessa preta", en: "Custard tarts and almond rolls on a black tray" },
+      caption: { pt: "Nata e travesseiros", en: "Custard tarts & almond rolls" }
+    },
+    {
+      img: "sonhos", w: 1532, h: 2047,
+      alt: { pt: "Sonhos fofos polvilhados com açúcar numa travessa preta", en: "Soft sugar-dusted doughnuts on a black tray" },
+      caption: { pt: "Sonhos com açúcar", en: "Sugar-dusted doughnuts" }
+    },
+    {
+      img: "bolo-sumo-laranja", w: 1532, h: 2047,
+      alt: { pt: "Fatia de bolo com cobertura de manga e coco, acompanhada de sumo de laranja", en: "Slice of cake with mango and coconut topping, served with orange juice" },
+      caption: { pt: "Bolo e sumo de laranja", en: "Cake & orange juice" }
+    },
+    {
+      img: "cafe-gelado", w: 1532, h: 2047,
+      alt: { pt: "Café gelado com chantilly e calda de chocolate num copo", en: "Iced coffee with whipped cream and chocolate sauce in a glass" },
+      caption: { pt: "Café gelado", en: "Iced coffee" }
+    },
+    {
+      img: "acai-chocolate", w: 1532, h: 2047,
+      alt: { pt: "Copo de açaí com morango, banana e calda de chocolate", en: "Açaí cup with strawberry, banana and chocolate sauce" },
+      caption: { pt: "Açaí com chocolate", en: "Açaí with chocolate" }
+    },
+    {
+      img: "acai-kiwi", w: 1532, h: 2047,
+      alt: { pt: "Copo de açaí com kiwi, morango e granola", en: "Açaí bowl with kiwi, strawberry and granola" },
+      caption: { pt: "Açaí com kiwi", en: "Açaí with kiwi" }
+    },
+    {
+      img: "bolo-aniversario", w: 1532, h: 2047,
+      alt: { pt: "Bolo de aniversário com flores e decorações", en: "Birthday cake with flowers and decorations" },
+      caption: { pt: "Bolo de aniversário", en: "Birthday cake" }
+    },
+    {
+      img: "acai-banana", w: 1532, h: 2047,
+      alt: { pt: "Copo de açaí com rodelas de banana e granola", en: "Açaí cup with banana slices and granola" },
+      caption: { pt: "Açaí com banana", en: "Açaí with banana" }
     }
   ],
 
