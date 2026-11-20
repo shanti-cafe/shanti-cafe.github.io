@@ -654,11 +654,6 @@ window.SHANTI = {
       caption: { pt: "Native Açaí", en: "Our signature açaí" }
     },
     {
-      img: "latte", w: 1000, h: 1000,
-      alt: { pt: "Café com latte art numa chávena branca", en: "Coffee with latte art in a white cup" },
-      caption: { pt: "Latte art", en: "Latte art" }
-    },
-    {
       img: "queijada", w: 900, h: 900,
       alt: { pt: "Queijada e café numa tábua de madeira", en: "Cheese tart and coffee on a wooden board" },
       caption: { pt: "Queijada", en: "Cheese tart" }
@@ -677,6 +672,11 @@ window.SHANTI = {
       img: "cake", w: 900, h: 1200,
       alt: { pt: "Bolo de chantilly com ananás", en: "Chantilly cream cake with pineapple" },
       caption: { pt: "Bolo chantilly", en: "Chantilly cream cake" }
+    },
+    {
+      img: "siga_nos", w: 900, h: 1200,
+      alt: { pt: "Sentes o amor ? É o nosso perfil a chamar por ti", en: "Feeling the love? Just follow us" },
+      caption: { pt: "Siga nos", en: "Follow us" }
     },
     {
       img: "juice-berry", w: 900, h: 1125,
