@@ -108,7 +108,7 @@ function pageMenus() {
         </article>`).join("")}
       </div>
       <div class="menus-bottom">
-        ${photo("nata", 24)}
+        ${photo("queijada", 24)}
         <p class="handmade">feito com carinho, todos os dias</p>
       </div>`;
 }

@@ -69,18 +69,18 @@ window.SHANTI = {
       "hero.ctaVisit": "Visitar-nos",
       "hero.address": "Centro Comercial Olival Parque · Loja 41",
       "hero.seal": "100% NATURAL · ",
-      "hero.script": "açaí da casa",
+      "hero.script": "um café Viena",
       "hero.alt": "Bowl de açaí com fruta fresca e chocolate",
-      "hero.altSmall": "Copo de açaí com morango, granola e colher",
+      "hero.altSmall": "Café com chantilly e chocolate",
       "hero.marquee": "Açaí \u2726 Bolos sem açúcar \u2726 Sumos naturais \u2726 Pastelaria tradicional \u2726 Wraps & saladas \u2726 Café de torra tradicional \u2726 ",
 
       "about.eyebrow": "A nossa casa",
       "about.title": "Um refúgio de calma,<br><em>com sabor a casa.</em>",
       "about.p1": "No Shanti Café acreditamos que uma pausa pode mudar o dia. Estamos no coração do Centro Comercial Olival Parque, em Forte da Casa, mas aqui o tempo passa mais devagar: o café é feito com cuidado, os bolos sabem a casa e cada sumo é espremido na hora.",
-      "about.p2": "Do pastel de nata acabado de sair do forno ao bolo caseiro sem açúcar, do wrap fresco à salada colorida, há sempre uma escolha que faz bem — e uma razão para voltar. E se ainda não provaste, o nosso açaí é um dos melhores da região: cremoso, servido com fruta fresca e ingredientes escolhidos a dedo.",
+      "about.p2": "Do pastel de nata ao bolo caseiro sem açúcar, do wrap fresco à salada colorida, há sempre uma escolha que faz bem — e uma razão para voltar. E se ainda não provaste, o nosso açaí é um dos melhores da região: cremoso, servido com fruta fresca e ingredientes escolhidos a dedo.",
       "about.quote": "“Sempre há uma opção saudável.”",
-      "about.f1t": "Açaí da casa",
-      "about.f1d": "Cremoso, com fruta fresca e toppings à escolha.",
+      "about.f1t": "Native Açaí",
+      "about.f1d": "Com açaí biológico, com fruta fresca e toppings à escolha.",
       "about.f2t": "Opções saudáveis",
       "about.f2d": "Wraps, saladas e bowls para um almoço leve.",
       "about.f3t": "Bolos sem açúcar",
@@ -88,12 +88,12 @@ window.SHANTI = {
       "about.f4t": "Feito no dia",
       "about.f4d": "Sumos 100% naturais, sem conservantes.",
       "about.sticker": "feito com carinho",
-      "about.alt": "Cliente do Shanti Café com flores cor-de-rosa",
-      "about.altSmall": "Pastel de nata e café",
+      "about.alt": "Funcionária do Shanti Café",
+      "about.altSmall": "Queijada e café",
 
       "acai.eyebrow": "O nosso orgulho",
       "acai.title": "Açaí como deve ser:<br><em>cremoso, fresco e generoso.</em>",
-      "acai.lead": "Feito com polpa de açaí, servido bem gelado e acompanhado por fruta fresca e os teus ingredientes favoritos. É um dos melhores da região — e o motivo pelo qual muitos clientes voltam vezes sem conta.",
+      "acai.lead": "Com açaí biológico, servido bem gelado e acompanhado por fruta fresca e os teus ingredientes favoritos. É um dos melhores da região — e o motivo pelo qual muitos clientes voltam vezes sem conta.",
       "acai.store": "Na loja",
       "acai.takeaway": "Para levar",
       "acai.bola": "1 bola",
@@ -138,7 +138,7 @@ window.SHANTI = {
       "juice.price": "1,50 €",
       "juice.script": "frescura em cada gole",
       "juice.cta": "Ver bebidas",
-      "juice.alt": "Smoothie rosa feito com fruta fresca",
+      "juice.alt": "Sumo natural feito com fruta fresca",
 
       "gallery.eyebrow": "Galeria",
       "gallery.title": "Momentos que <em>sabem bem.</em>",
@@ -251,9 +251,9 @@ window.SHANTI = {
       "hero.ctaVisit": "Visit us",
       "hero.address": "Centro Comercial Olival Parque · Shop 41",
       "hero.seal": "100% NATURAL · ",
-      "hero.script": "our signature açaí",
+      "hero.script": "a Viennese coffee",
       "hero.alt": "Açaí bowl with fresh fruit and chocolate",
-      "hero.altSmall": "Açaí bowl with strawberry, granola and a spoon",
+      "hero.altSmall": "Coffee with whipped cream and chocolate",
       "hero.marquee": "Açaí \u2726 Sugar-free cakes \u2726 Fresh juices \u2726 Traditional pastries \u2726 Wraps & salads \u2726 Traditional roast coffee \u2726 ",
 
       "about.eyebrow": "Our home",
@@ -261,8 +261,8 @@ window.SHANTI = {
       "about.p1": "At Shanti Café we believe a little pause can change your day. We are in the heart of Centro Comercial Olival Parque, in Forte da Casa, yet time moves a little slower here: coffee is made with care, cakes taste homemade and every juice is squeezed to order.",
       "about.p2": "From a warm pastel de nata to a sugar-free homemade cake, from a fresh wrap to a colourful salad, there is always a choice that feels good — and a reason to come back. And if you haven't tried it yet, our açaí is one of the best in the region: creamy, served with fresh fruit and carefully chosen ingredients.",
       "about.quote": "“There's always a healthier option.”",
-      "about.f1t": "Our signature açaí",
-      "about.f1d": "Creamy, with fresh fruit and your choice of toppings.",
+      "about.f1t": "Native Açaí",
+      "about.f1d": "Organic açaí, with fresh fruit and your choice of toppings.",
       "about.f2t": "Healthier choices",
       "about.f2d": "Wraps, salads and bowls for a lighter lunch.",
       "about.f3t": "Sugar-free cakes",
@@ -270,12 +270,12 @@ window.SHANTI = {
       "about.f4t": "Made fresh daily",
       "about.f4d": "100% natural juices, no preservatives.",
       "about.sticker": "made with love",
-      "about.alt": "Shanti Café guest with pink flowers",
-      "about.altSmall": "Custard tart and coffee",
+      "about.alt": "Shanti Café employee",
+      "about.altSmall": "Cheese tart and coffee",
 
       "acai.eyebrow": "Our pride",
       "acai.title": "Açaí done right:<br><em>creamy, fresh and generous.</em>",
-      "acai.lead": "Made with açaí pulp, served nice and cold with fresh fruit and your favourite ingredients. It is one of the best in the region — and the reason so many guests come back again and again.",
+      "acai.lead": "Made with organic açaí, served nice and cold with fresh fruit and your favourite ingredients. It is one of the best in the region — and the reason so many guests come back again and again.",
       "acai.store": "Eat in",
       "acai.takeaway": "Take away",
       "acai.bola": "1 scoop",
@@ -320,7 +320,7 @@ window.SHANTI = {
       "juice.price": "€1.50",
       "juice.script": "freshness in every sip",
       "juice.cta": "See drinks",
-      "juice.alt": "Pink smoothie made with fresh fruit",
+      "juice.alt": "Fresh juice made with fruit",
 
       "gallery.eyebrow": "Gallery",
       "gallery.title": "Moments that <em>taste good.</em>",
@@ -642,7 +642,7 @@ window.SHANTI = {
           price: "1,50",
           tag: { pt: "100% natural", en: "100% natural" }
         },
-        { name: { pt: "Polpa de Fruta", en: "Fruit pulp" }, price: "2,00" }
+        { name: { pt: "Smoothie", en: "Smoothie" }, price: "2,00" }
       ]
     }
   ],
@@ -651,7 +651,7 @@ window.SHANTI = {
     {
       img: "hero-acai", w: 1200, h: 1500,
       alt: { pt: "Bowl de açaí com fruta fresca e toppings", en: "Açaí bowl with fresh fruit and toppings" },
-      caption: { pt: "Açaí da casa", en: "Our signature açaí" }
+      caption: { pt: "Native Açaí", en: "Our signature açaí" }
     },
     {
       img: "latte", w: 1000, h: 1000,
@@ -659,9 +659,9 @@ window.SHANTI = {
       caption: { pt: "Latte art", en: "Latte art" }
     },
     {
-      img: "nata", w: 900, h: 900,
-      alt: { pt: "Pastel de nata e café numa tábua de madeira", en: "Custard tart and coffee on a wooden board" },
-      caption: { pt: "Pastel de nata", en: "Custard tart" }
+      img: "queijada", w: 900, h: 900,
+      alt: { pt: "Queijada e café numa tábua de madeira", en: "Cheese tart and coffee on a wooden board" },
+      caption: { pt: "Queijada", en: "Cheese tart" }
     },
     {
       img: "wrap", w: 1000, h: 1000,
@@ -675,23 +675,23 @@ window.SHANTI = {
     },
     {
       img: "cake", w: 900, h: 1200,
-      alt: { pt: "Fatia de bolo caseiro com limão", en: "Slice of homemade lemon cake" },
-      caption: { pt: "Bolo caseiro", en: "Homemade cake" }
+      alt: { pt: "Bolo de chantilly com ananás", en: "Chantilly cream cake with pineapple" },
+      caption: { pt: "Bolo chantilly", en: "Chantilly cream cake" }
     },
     {
       img: "juice-berry", w: 900, h: 1125,
-      alt: { pt: "Bebida gelada de fruta com morango", en: "Iced fruit drink with strawberry" },
-      caption: { pt: "Sumo natural", en: "Fresh juice" }
+      alt: { pt: "Copo de salada de fruta com morango, laranja e maçã", en: "Cup of fruit salad with strawberry, orange and apple" },
+      caption: { pt: "Salada da fruta", en: "Fruit salad" }
     },
     {
       img: "acai-cups", w: 1000, h: 1200,
-      alt: { pt: "Dois copos de açaí com fruta", en: "Two cups of açaí with fruit" },
+      alt: { pt: "Três copos de açaí com fruta", en: "Three cups of açaí with fruit" },
       caption: { pt: "Açaí para levar", en: "Açaí to go" }
     },
     {
       img: "coffee-toast", w: 1000, h: 1000,
-      alt: { pt: "Café e torrada numa mesa de café", en: "Coffee and toast on a café table" },
-      caption: { pt: "Café & torrada", en: "Coffee & toast" }
+      alt: { pt: "Chocolate quente e torrada numa mesa de café", en: "Hot chocolate and toast on a café table" },
+      caption: { pt: "Chocolate quente & torrada", en: "Hot chocolate & toast" }
     },
     {
       img: "yogurt", w: 1000, h: 1000,
@@ -736,12 +736,12 @@ window.SHANTI = {
     {
       img: "brigadeiros", w: 900, h: 900,
       alt: { pt: "Brigadeiros caseiros cobertos de chocolate", en: "Homemade chocolate brigadeiros" },
-      caption: { pt: "Brigadeiros", en: "Brigadeiros" }
+      caption: { pt: "Brigadeiros caseiros", en: "Brigadeiros" }
     },
     {
-      img: "nata-travesseiros", w: 1532, h: 2047,
-      alt: { pt: "Pastéis de nata e travesseiros numa travessa preta", en: "Custard tarts and almond rolls on a black tray" },
-      caption: { pt: "Nata e travesseiros", en: "Custard tarts & almond rolls" }
+      img: "croquetes-empanadas", w: 1532, h: 2047,
+      alt: { pt: "Croquetes e empanadas numa travessa preta", en: "Croquettes and empanadas on a black tray" },
+      caption: { pt: "Croquetes e empanadas", en: "Croquettes & empanadas" }
     },
     {
       img: "sonhos", w: 1532, h: 2047,
@@ -755,13 +755,13 @@ window.SHANTI = {
     },
     {
       img: "cafe-gelado", w: 1532, h: 2047,
-      alt: { pt: "Café gelado com chantilly e calda de chocolate num copo", en: "Iced coffee with whipped cream and chocolate sauce in a glass" },
-      caption: { pt: "Café gelado", en: "Iced coffee" }
+      alt: { pt: "Café com chantilly e calda de chocolate num copo", en: "Coffee with whipped cream and chocolate sauce in a glass" },
+      caption: { pt: "Café Viena", en: "Viennese coffee" }
     },
     {
       img: "acai-chocolate", w: 1532, h: 2047,
-      alt: { pt: "Copo de açaí com morango, banana e calda de chocolate", en: "Açaí cup with strawberry, banana and chocolate sauce" },
-      caption: { pt: "Açaí com chocolate", en: "Açaí with chocolate" }
+      alt: { pt: "Copo de açaí com morango, banana e topping de nutella", en: "Açaí cup with strawberry, banana and nutella" },
+      caption: { pt: "Açaí com nutella", en: "Açaí with nutella" }
     },
     {
       img: "acai-kiwi", w: 1532, h: 2047,
