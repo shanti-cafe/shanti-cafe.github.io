@@ -646,6 +646,7 @@ window.SHANTI = {
         {
           name: { pt: "Sumo natural do dia — grande", en: "Juice of the day — large" },
           sheet: "Copo grande",
+          tag: { pt: "100% natural", en: "100% natural" },
           price: "1,90"
         },
         {
@@ -658,6 +659,7 @@ window.SHANTI = {
         {
           name: { pt: "Sumo de laranja natural — grande", en: "Natural orange juice — large" },
           sheet: "Copo grande",
+          tag: { pt: "100% natural", en: "100% natural" },
           price: "2,50"
         },
         { name: { pt: "Smoothie", en: "Smoothie" }, price: "2,00" },
