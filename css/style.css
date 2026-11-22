@@ -406,38 +406,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 
 .brand-logo {
-  width: 46px;
-  height: 46px;
+  width: auto;
+  height: 66px;
   flex: none;
-  border-radius: 50%;
-  border: 2px solid rgba(243, 148, 159, 0.5);
-  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(80, 30, 16, 0.14);
+  object-fit: contain;
   box-shadow: 0 6px 16px -8px rgba(80, 30, 16, 0.6);
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.02;
-  min-width: 0;
-}
-
-.brand-name {
-  font-family: var(--font-display);
-  font-size: 1.18rem;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  white-space: nowrap;
-}
-
-.brand-sub {
-  margin-top: 3px;
-  font-size: 0.52rem;
-  font-weight: 800;
-  letter-spacing: 0.23em;
-  text-transform: uppercase;
-  color: var(--muted);
-  white-space: nowrap;
 }
 
 .main-nav { display: flex; align-items: center; }
@@ -2494,13 +2469,9 @@ html:not(.js) .menu-panels { padding-top: 0.5rem; }
 }
 
 .brand--footer .brand-logo {
-  width: 52px;
-  height: 52px;
-  border-color: rgba(253, 188, 198, 0.35);
+  height: 72px;
+  border-color: rgba(253, 188, 198, 0.22);
 }
-
-.brand--footer .brand-name { color: var(--cream); }
-.brand--footer .brand-sub { color: rgba(255, 243, 239, 0.42); }
 
 .footer-tagline {
   max-width: 16rem;
@@ -2829,7 +2800,6 @@ html.js .reveal.is-in {
 }
 
 @media (max-width: 959px) {
-  .brand-sub { display: none; }
   .hero-visual { max-width: 430px; }
 }
 
@@ -2841,6 +2811,7 @@ html.js .reveal.is-in {
   .seal { width: 96px; height: 96px; }
   .seal-ring text { font-size: 15px; letter-spacing: 0.85px; }
   .about-mini { width: 43%; }
+  .brand-logo { height: 58px; }
   .about-sticker, .acai-sticker { width: 102px; height: 102px; }
   .acai-tag { bottom: 2.1rem; }
   .lb-prev { left: 0.35rem; }
