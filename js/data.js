@@ -34,7 +34,7 @@ window.SHANTI = {
       "nav.menu": "Menu",
       "nav.gallery": "Galeria",
       "nav.social": "Novidades",
-      "nav.visit": "Visita-nos",
+      "nav.visit": "Visite-nos",
       "nav.contact": "Contactos",
       "nav.aria": "Navegação principal",
       "nav.open": "Abrir menu",
@@ -76,7 +76,7 @@ window.SHANTI = {
 
       "about.eyebrow": "A nossa casa",
       "about.title": "Um refúgio de calma,<br><em>com sabor a casa.</em>",
-      "about.p1": "No Shanti Café acreditamos que uma pausa pode mudar o dia. Estamos no coração do Centro Comercial Olival Parque, em Forte da Casa, mas aqui o tempo passa mais devagar: o café é feito com cuidado, os bolos sabem a casa e cada sumo é espremido na hora.",
+      "about.p1": "No Shanti Café acreditamos que uma pausa pode mudar o dia. Estamos no coração do Centro Comercial Olival Parque, no Forte da Casa, aqui o tempo passa mais devagar: o café é feito com cuidado, os bolos sabem a casa e cada sumo é espremido na hora.",
       "about.p2": "Do pastel de nata ao bolo caseiro sem açúcar, do wrap fresco à salada colorida, há sempre uma escolha que faz bem — e uma razão para voltar. E se ainda não provaste, o nosso açaí é um dos melhores da região: cremoso, servido com fruta fresca e ingredientes escolhidos a dedo.",
       "about.quote": "“Sempre há uma opção saudável.”",
       "about.f1t": "Native Açaí",
@@ -107,7 +107,7 @@ window.SHANTI = {
       "acai.others": "Outros",
       "acai.othersList": "Granola · Paçoca · Coco ralado · Granulado · Nutella · Leite Ninho · Pintarolas",
       "acai.toppings": "Coberturas",
-      "acai.toppingsList": "Mel · Leite condensado · Caramelo · Nutella",
+      "acai.toppingsList": "Morango · Leite condensado · Chocolate · Caramelo · Nutella · Mel",
       "acai.cta": "Ver no menu",
       "acai.note": "Para levar acresce 0,50 €.",
       "acai.script": "gelado, cremoso, teu.",
@@ -167,7 +167,7 @@ window.SHANTI = {
 
       "visit.eyebrow": "Visita-nos",
       "visit.title": "Um cantinho fácil<br><em>de encontrar.</em>",
-      "visit.lead": "Estamos dentro do Centro Comercial Olival Parque, em Forte da Casa — mesmo ao lado das tuas compras.",
+      "visit.lead": "Estamos dentro do Centro Comercial Olival Parque, no Forte da Casa.",
       "visit.addressLabel": "Morada",
       "visit.address1": "Centro Comercial Olival Parque, Loja 41",
       "visit.address2": "Rua do Olival 5A · 2625-448 Forte da Casa",
@@ -200,7 +200,7 @@ window.SHANTI = {
       "footer.hours": "Horário",
       "footer.contacts": "Contactos",
       "footer.rights": "Todos os direitos reservados.",
-      "footer.made": "Feito com carinho em Forte da Casa.",
+      "footer.made": "Feito com carinho no Forte da Casa.",
       "footer.weekdays": "Seg–Sex · 09:00–19:00",
       "footer.saturday": "Sábado · 09:00–17:30",
       "footer.sunday": "Domingo · Fechado"
@@ -289,7 +289,7 @@ window.SHANTI = {
       "acai.others": "Extras",
       "acai.othersList": "Granola · Paçoca · Coconut flakes · Sprinkles · Nutella · Milk powder · Chocolate lentils",
       "acai.toppings": "Toppings",
-      "acai.toppingsList": "Honey · Condensed milk · Caramel · Nutella",
+      "acai.toppingsList": "Strawberry · Chocolate · Condensed milk · Caramel · Nutella · Honey",
       "acai.cta": "See it on the menu",
       "acai.note": "Take away costs €0.50 extra.",
       "acai.script": "cold, creamy, yours.",
@@ -560,7 +560,7 @@ window.SHANTI = {
       icon: "cup",
       title: { pt: "Cafetaria", en: "Coffee" },
       note: {
-        pt: "Café de torra tradicional e opções sem cafeína, feito com cuidado.",
+        pt: "Café de torra tradicional e opções sem cafeína, feito com carinho.",
         en: "Traditional roast coffee and caffeine-free options, made with care."
       },
       items: [
@@ -637,12 +637,30 @@ window.SHANTI = {
         },
         { name: { pt: "Freeze", en: "Freeze" }, price: "1,20" },
         {
-          name: { pt: "Sumo Natural do Dia", en: "Juice of the day" },
+          name: { pt: "Sumo natural do dia — pequeno", en: "Juice of the day — small" },
+          sheet: "Copo pequeno",
           desc: { pt: "Fruta fresca espremida na hora.", en: "Fresh fruit, squeezed to order." },
-          price: "1,50",
-          tag: { pt: "100% natural", en: "100% natural" }
+          tag: { pt: "100% natural", en: "100% natural" },
+          price: "1,20"
         },
-        { name: { pt: "Smoothie", en: "Smoothie" }, price: "2,00" }
+        {
+          name: { pt: "Sumo natural do dia — grande", en: "Juice of the day — large" },
+          sheet: "Copo grande",
+          price: "1,90"
+        },
+        {
+          name: { pt: "Sumo de laranja natural — pequeno", en: "Natural orange juice — small" },
+          sheet: "Copo pequeno",
+          desc: { pt: "Fruta fresca espremida na hora.", en: "Fresh fruit, squeezed to order." },
+          tag: { pt: "100% natural", en: "100% natural" },
+          price: "1,90"
+        },
+        {
+          name: { pt: "Sumo de laranja natural — grande", en: "Natural orange juice — large" },
+          sheet: "Copo grande",
+          price: "2,50"
+        },
+        { name: { pt: "Smoothie", en: "Smoothie" }, price: "2,00" },
       ]
     }
   ],
@@ -690,8 +708,8 @@ window.SHANTI = {
     },
     {
       img: "coffee-toast", w: 1000, h: 1000,
-      alt: { pt: "Chocolate quente e torrada numa mesa de café", en: "Hot chocolate and toast on a café table" },
-      caption: { pt: "Chocolate quente & torrada", en: "Hot chocolate & toast" }
+      alt: { pt: "Chocolate quente e croissant prensado", en: "Hot chocolate and pressed croissant" },
+      caption: { pt: "Chocolate quente & croissant prensado", en: "Hot chocolate & pressed croissant" }
     },
     {
       img: "yogurt", w: 1000, h: 1000,
@@ -710,8 +728,8 @@ window.SHANTI = {
     },
     {
       img: "juice-pink", w: 900, h: 1125,
-      alt: { pt: "Smoothie rosa com girassol", en: "Pink smoothie with a sunflower" },
-      caption: { pt: "Smoothie de fruta", en: "Fruit smoothie" }
+      alt: { pt: "Sumo Natural do dia", en: "Freshly made natuaal juice" },
+      caption: { pt: "Sumo Natural do dia", en: "Freshly made natuaal juice" }
     },
     {
       img: "carla", w: 900, h: 1125,
@@ -735,18 +753,18 @@ window.SHANTI = {
     },
     {
       img: "brigadeiros", w: 900, h: 900,
-      alt: { pt: "Brigadeiros caseiros cobertos de chocolate", en: "Homemade chocolate brigadeiros" },
-      caption: { pt: "Brigadeiros caseiros", en: "Brigadeiros" }
+      alt: { pt: "Bombom caseiros", en: "Homemade chocolate bombom" },
+      caption: { pt: "Bombom caseiros", en: "Homemade Bombom" }
     },
     {
       img: "croquetes-empanadas", w: 1532, h: 2047,
-      alt: { pt: "Croquetes e empanadas numa travessa preta", en: "Croquettes and empanadas on a black tray" },
-      caption: { pt: "Croquetes e empanadas", en: "Croquettes & empanadas" }
+      alt: { pt: "Croquetes e empada numa travessa preta", en: "Croquettes and empada on a black tray" },
+      caption: { pt: "Croquetes e empada", en: "Croquettes & empada" }
     },
     {
       img: "sonhos", w: 1532, h: 2047,
-      alt: { pt: "Sonhos fofos polvilhados com açúcar numa travessa preta", en: "Soft sugar-dusted doughnuts on a black tray" },
-      caption: { pt: "Sonhos com açúcar", en: "Sugar-dusted doughnuts" }
+      alt: { pt: "Fofinhos de Belas numa travessa preta", en: "Sugar-dusted light sponge-like cake on a black tray" },
+      caption: { pt: "Fofinhos de Belas", en: "Fofinhos de Belas" }
     },
     {
       img: "bolo-sumo-laranja", w: 1532, h: 2047,

@@ -62,7 +62,7 @@ def parse_price(raw: str) -> str | None:
 
 
 def read_sheet(path: Path):
-    """Devolve {nome_normalizado: {name, price, takeaway?}} a partir do .ods."""
+    """Devolve a lista ordenada de itens do preçário (duplicados incluídos)."""
     with zipfile.ZipFile(path) as archive:
         root = ET.fromstring(archive.read("content.xml"))
 
@@ -84,8 +84,8 @@ def read_sheet(path: Path):
     def cell(row, letter):
         return row.get(str(col_index(letter)), "")
 
-    items: dict[str, dict] = {}
-    store_names: set[str] = set()
+    records: list[dict] = []
+    acai_entries: dict[str, dict] = {}
     acai_mode = "loja"
 
     for row in rows:
@@ -112,23 +112,40 @@ def read_sheet(path: Path):
                 continue
 
             key = norm(name)
-            entry = items.setdefault(key, {"name": name, "price": price})
+            record = {
+                "name": name,
+                "key": key,
+                "group": group,
+                "price": price,
+                "takeaway": None,
+            }
 
-            if group == "acai" and acai_mode == "levar" and key in store_names:
-                entry["takeaway"] = price
-            else:
-                entry["price"] = price
-                if group == "acai":
-                    store_names.add(key)
+            if group == "acai":
+                existing = acai_entries.get(key)
+                if existing is not None and acai_mode == "levar":
+                    existing["takeaway"] = price
+                elif existing is not None:
+                    existing["price"] = price
+                else:
+                    acai_entries[key] = record
+                    records.append(record)
+                continue
 
-    return items
+            records.append(record)
+
+    return records
 
 
 def scan_data(text: str):
-    """Mapeia nome normalizado -> posições no texto de js/data.js."""
+    """Devolve a lista ordenada de itens de js/data.js com as posições dos preços.
+
+    Um item pode indicar ``sheet: "Copo pequeno"`` para se ligar a uma linha do
+    preçário cujo nome se repete (ex.: tamanhos de sumo). A ligação é feita por
+    ordem de aparecimento, por isso os duplicados não se sobrepõem.
+    """
     name_re = re.compile(r'name:\s*\{\s*pt:\s*"([^"]+)"')
     matches = list(name_re.finditer(text))
-    found = {}
+    found = []
 
     for index, match in enumerate(matches):
         end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
@@ -136,10 +153,11 @@ def scan_data(text: str):
         price = re.search(r'price:\s*"([^"]+)"', block)
         if not price:
             continue
-        key = norm(match.group(1))
-        found[key] = {
+        alias = re.search(r'sheet:\s*"([^"]+)"', block)
+        key = norm(alias.group(1) if alias else match.group(1))
+        item = {
             "name": match.group(1),
-            "name_start": match.start(1),
+            "key": key,
             "price": price.group(1),
             "price_start": match.end() + price.start(1),
             "price_end": match.end() + price.end(1),
@@ -149,9 +167,10 @@ def scan_data(text: str):
         }
         takeaway = re.search(r'takeaway:\s*"([^"]+)"', block)
         if takeaway:
-            found[key]["takeaway"] = takeaway.group(1)
-            found[key]["takeaway_start"] = match.end() + takeaway.start(1)
-            found[key]["takeaway_end"] = match.end() + takeaway.end(1)
+            item["takeaway"] = takeaway.group(1)
+            item["takeaway_start"] = match.end() + takeaway.start(1)
+            item["takeaway_end"] = match.end() + takeaway.end(1)
+        found.append(item)
 
     return found
 
@@ -180,7 +199,19 @@ def main() -> int:
     text = data_path.read_text(encoding="utf-8")
     found = scan_data(text)
 
-    missing = [entry["name"] for key, entry in sheet.items() if key not in found]
+    available: dict[str, list[dict]] = {}
+    for item in found:
+        available.setdefault(item["key"], []).append(item)
+
+    missing = []
+    matched: list[tuple[dict, dict]] = []
+    for entry in sheet:
+        queue = available.get(entry["key"])
+        if not queue:
+            missing.append(entry["name"])
+            continue
+        matched.append((entry, queue.pop(0)))
+
     if missing:
         print("! Estes itens estão no preçário mas não existem em js/data.js:")
         for name in missing:
@@ -190,8 +221,7 @@ def main() -> int:
 
     edits = []
     changed = []
-    for key, entry in sheet.items():
-        target = found[key]
+    for entry, target in matched:
         if target["price"] != entry["price"]:
             edits.append((target["price_start"], target["price_end"], entry["price"]))
             changed.append(f'{target["name"]}: {target["price"]} -> {entry["price"]}')
@@ -218,13 +248,14 @@ def main() -> int:
     # destaque do açaí na página inicial
     index_path = ROOT / "index.html"
     html = index_path.read_text(encoding="utf-8")
+    sheet_by_key = {entry["key"]: entry for entry in sheet}
     acai_highlights = (
         ("acai.bola", "Açaí 1 bola"),
         ("acai.copo", "Açaí 250 ml"),
         ("acai.bowl", "Açaí 450 ml"),
     )
     for ui_key, sheet_name in acai_highlights:
-        entry = sheet.get(norm(sheet_name))
+        entry = sheet_by_key.get(norm(sheet_name))
         if not entry:
             continue
         for suffix, value in (("store", entry["price"]), ("takeaway", entry.get("takeaway"))):
@@ -242,7 +273,8 @@ def main() -> int:
                 pass
     index_path.write_text(html, encoding="utf-8")
 
-    extras = [found[key]["name"] for key in found if key not in sheet]
+    sheet_keys = {entry["key"] for entry in sheet}
+    extras = [item["name"] for item in found if item["key"] not in sheet_keys]
 
     print(f"Preçário: {sheet_path.name}")
     print(f"  {len(sheet)} itens lidos · {len(changed)} alterações")

@@ -115,7 +115,7 @@ function pageMenus() {
 
 function pageCoffee() {
   const coffee = cat("cafetaria");
-  return listPage(coffee) + photo("latte", 42);
+  return listPage(coffee) + photo("cafe-gelado", 42);
 }
 
 function pageDrinks() {
