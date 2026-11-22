@@ -66,7 +66,7 @@ window.SHANTI = {
       "hero.chip2": "Pastelaria tradicional",
       "hero.chip3": "Sumos naturais",
       "hero.ctaMenu": "Explorar o menu",
-      "hero.ctaVisit": "Visitar-nos",
+      "hero.ctaVisit": "Visite-nos",
       "hero.address": "Centro Comercial Olival Parque · Loja 41",
       "hero.seal": "100% NATURAL · ",
       "hero.script": "um café Viena",
@@ -76,7 +76,7 @@ window.SHANTI = {
 
       "about.eyebrow": "A nossa casa",
       "about.title": "Um refúgio de calma,<br><em>com sabor a casa.</em>",
-      "about.p1": "No Shanti Café acreditamos que uma pausa pode mudar o dia. Estamos no coração do Centro Comercial Olival Parque, no Forte da Casa, aqui o tempo passa mais devagar: o café é feito com cuidado, os bolos sabem a casa e cada sumo é espremido na hora.",
+      "about.p1": "No Shanti Café acreditamos que uma pausa pode mudar o dia. Estamos no coração do Centro Comercial Olival Parque, no Forte da Casa, aqui o tempo passa mais devagar: o café é feito com carinho, os bolos sabem a casa e cada sumo é espremido na hora.",
       "about.p2": "Do pastel de nata ao bolo caseiro sem açúcar, do wrap fresco à salada colorida, há sempre uma escolha que faz bem — e uma razão para voltar. E se ainda não provaste, o nosso açaí é um dos melhores da região: cremoso, servido com fruta fresca e ingredientes escolhidos a dedo.",
       "about.quote": "“Sempre há uma opção saudável.”",
       "about.f1t": "Native Açaí",
@@ -107,7 +107,7 @@ window.SHANTI = {
       "acai.others": "Outros",
       "acai.othersList": "Granola · Paçoca · Coco ralado · Granulado · Nutella · Leite Ninho · Pintarolas",
       "acai.toppings": "Coberturas",
-      "acai.toppingsList": "Morango · Leite condensado · Chocolate · Caramelo · Nutella · Mel",
+      "acai.toppingsList": "Leite condensado · Chocolate · Caramelo · Nutella · Morango doce · Mel",
       "acai.cta": "Ver no menu",
       "acai.note": "Para levar acresce 0,50 €.",
       "acai.script": "gelado, cremoso, teu.",
@@ -289,7 +289,7 @@ window.SHANTI = {
       "acai.others": "Extras",
       "acai.othersList": "Granola · Paçoca · Coconut flakes · Sprinkles · Nutella · Milk powder · Chocolate lentils",
       "acai.toppings": "Toppings",
-      "acai.toppingsList": "Strawberry · Chocolate · Condensed milk · Caramel · Nutella · Honey",
+      "acai.toppingsList": "Condensed milk · Strawberry syrup· Chocolate · Caramel · Nutella · Honey",
       "acai.cta": "See it on the menu",
       "acai.note": "Take away costs €0.50 extra.",
       "acai.script": "cold, creamy, yours.",
@@ -719,9 +719,9 @@ window.SHANTI = {
       caption: { pt: "Bowl de iogurte", en: "Yogurt bowl" }
     },
     {
-      img: "woman", w: 900, h: 1125,
-      alt: { pt: "Mulher sorridente com flores cor-de-rosa", en: "Smiling woman with pink flowers" },
-      caption: { pt: "Flores para o balcão", en: "Flowers for the counter" }
+      img: "promo", w: 900, h: 1125,
+      alt: { pt: "Menu para todos os ocasião", en: "Menu for every occasion" },
+      caption: { pt: "Sabores que nutrem", en: "Nutritious delights" }
     },
     {
       img: "storefront", w: 900, h: 1200,
@@ -774,7 +774,7 @@ window.SHANTI = {
       caption: { pt: "Bolo e sumo de laranja", en: "Cake & orange juice" }
     },
     {
-      img: "cafe-gelado", w: 1532, h: 2047,
+      img: "cafe-viena", w: 1532, h: 2047,
       alt: { pt: "Café com chantilly e calda de chocolate num copo", en: "Coffee with whipped cream and chocolate sauce in a glass" },
       caption: { pt: "Café Viena", en: "Viennese coffee" }
     },
